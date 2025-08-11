@@ -1,177 +1,194 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>سياسة الخصوصية - ZI-MABEDK</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>سياسة الخصوصية</title>
   <style>
-    :root {
-      --bg: #ffffff;
-      --fg: #121212;
-      --muted: #60646c;
-      --card: #f7f7f8;
-      --primary: #2563eb;
-      --border: #e5e7eb;
-    }
-    * { box-sizing: border-box; }
     body {
-      margin: 0; padding: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Kufi Arabic", "Noto Naskh Arabic", sans-serif;
-      background: var(--bg); color: var(--fg); line-height: 1.8;
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
     }
-    .container { max-width: 920px; margin: 0 auto; padding: 24px; }
-    header { padding: 24px; background: var(--card); border-bottom: 1px solid var(--border); border-radius: 0 0 12px 12px; }
-    h1 { margin: 0 0 8px; font-size: 1.8rem; }
-    .meta { color: var(--muted); font-size: 0.95rem; }
-    section { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin: 18px 0; }
-    h2 { font-size: 1.2rem; margin: 0 0 12px; }
-    p { margin: 0 0 10px; }
-    ul { margin: 8px 0 0 0; padding: 0 22px; }
-    li { margin: 6px 0; }
-    code.badge { background: #eef2ff; color: #1e40af; padding: 2px 6px; border-radius: 6px; font-size: 0.85em; }
-    .note { background: #fdf7e7; border: 1px solid #f4e5b5; color: #8a6d3b; padding: 10px 12px; border-radius: 8px; }
-    footer { color: var(--muted); font-size: 0.92rem; padding: 16px 0 48px; }
-    a { color: var(--primary); text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      background-color: #fff;
+      border-bottom: 1px solid #eee;
+      padding-top: 45px;
+    }
+    .back-button {
+      padding: 8px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    .header-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      margin-right: 16px;
+    }
+    .section {
+      background-color: #fff;
+      margin: 16px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0px 2px 3.84px rgba(0, 0, 0, 0.1);
+    }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .last-updated {
+      font-size: 14px;
+      color: #666;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .introduction {
+      font-size: 16px;
+      color: #666;
+      line-height: 24px;
+      margin-bottom: 24px;
+      text-align: justify;
+    }
+    .section-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 8px;
+    }
+    .policy-text {
+      font-size: 14px;
+      color: #666;
+      line-height: 22px;
+      text-align: justify;
+      margin-bottom: 8px;
+    }
+    .bullet-point {
+      font-size: 14px;
+      color: #666;
+      line-height: 20px;
+      margin-right: 16px;
+      margin-bottom: 4px;
+    }
+    .contact-section {
+      border-top: 1px solid #eee;
+      padding-top: 20px;
+      margin-top: 20px;
+    }
+    .contact-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 8px;
+    }
+    .contact-text {
+      font-size: 14px;
+      color: #666;
+      line-height: 20px;
+      margin-bottom: 8px;
+    }
+    .contact-email {
+      font-size: 14px;
+      color: #36c7f6;
+      font-weight: 600;
+    }
   </style>
-  <meta name="description" content="سياسة الخصوصية لتطبيق ZI-MABEDK" />
-  <meta name="robots" content="noindex,follow" />
-  <link rel="canonical" href="{{POLICY_URL}}" />
-  <script>
-    // مساعد صغير لطباعة السنة الحالية في أسفل الصفحة
-    document.addEventListener('DOMContentLoaded', function(){
-      var el = document.getElementById('year'); if (el) el.textContent = new Date().getFullYear();
-    });
-  </script>
-  <!-- ملاحظة: استبدل القيم بين {{...}} ببياناتك قبل النشر -->
-  <!-- إن لم تستخدم خدمة/إذن، احذف القسم الخاص بها -->
-  <!-- هذه الصفحة للاستخدام العام ولا تُعتبر نصيحة قانونية -->
-  
-  <!-- خيار: قسم موجز بالإنجليزية أسفل الصفحة إن رغبت -->
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>سياسة الخصوصية</h1>
-      <div class="meta">الخاصة بتطبيق <strong>ZI-MABEDK</strong> — سارية اعتبارًا من <strong>2025-08-09</strong></div>
-      <div class="meta">الناشر/المطور: <strong>ZI-MABEDK</strong> • تواصل: <a href="mailto:zi.mabedk@gmail.com">zi.mabedk@gmail.com</a></div>
-    </header>
 
-    <section>
-      <h2>1) مقدمة</h2>
-      <p>نحن في <strong>ZI-MABEDK</strong> (تطبيق تجارة إلكترونية) نحترم خصوصيتك. تهدف هذه السياسة إلى شرح نوع البيانات التي قد نجمعها وكيف نستخدمها ونحافظ على سريتها، وحقوقك المتعلقة بها. باستخدامك للتطبيق فإنك توافق على هذه السياسة.</p>
-    </section>
-
-    <section>
-      <h2>2) ما البيانات التي نجمعها</h2>
-      <p>قد يجمع التطبيق الأنواع التالية من البيانات حسب استخدامك وميزات التطبيق:</p>
-      <ul>
-        <li><strong>بيانات الحساب/الهوية</strong> (مثل الاسم، البريد الإلكتروني) — عند التسجيل أو التواصل معنا.</li>
-        <li><strong>بيانات الاستخدام</strong> (مثل تفاعلك مع الميزات، تقارير الأعطال، إحصاءات الأداء) لتحسين التجربة.</li>
-        <li><strong>بيانات الجهاز والأذونات</strong> (نوع الجهاز، نظام التشغيل، المعرّفات الإعلانية، أذونات مثل الكاميرا/الموقع عند الموافقة).</li>
-        <li><strong>بيانات الطلبات والشحن</strong> (العناوين، رقم الهاتف، محتويات السلة، تفاصيل الطلب وحالته) لمعالجة الطلب وتسليمه.</li>
-        <li><strong>معلومات الدفع</strong> (مثل طريقة الدفع والنتيجة). قد تتم معالجة بيانات البطاقات عبر مزود دفع طرف ثالث ملتزم بالمعايير الأمنية مثل PCI-DSS. لا نحتفظ ببيانات البطاقة الحساسة على خوادمنا إلا إذا تم توضيح ذلك صراحة وبشكل آمن.</li>
-      </ul>
-      <p class="note">هام: إن لم يكن التطبيق يجمع نوعًا ما من البيانات، احذف البند الخاص به.</p>
-    </section>
-
-    <section>
-      <h2>3) كيف نستخدم بياناتك</h2>
-      <ul>
-        <li>تقديم وتشغيل ميزات التطبيق.</li>
-        <li>التحسين واستكشاف الأخطاء وإحصاءات الأداء.</li>
-        <li>التواصل معك بشأن التحديثات أو الدعم الفني.</li>
-        <li>الامتثال للالتزامات القانونية وحماية حقوقنا القانونية.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>4) مشاركة البيانات</h2>
-      <ul>
-        <li>لا نبيع بياناتك الشخصية لطرف ثالث.</li>
-        <li>قد نشارك بيانات محدودة مع <strong>مزودي خدمة</strong> موثوقين لتشغيل بعض الميزات (مثلاً التحليلات/الإشعارات) وفق اتفاقيات معالجة بيانات.</li>
-      </ul>
-      <h3 style="margin-top:12px">خدمات أطراف ثالثة (اختياري — احذف ما لا ينطبق)</h3>
-      <ul>
-        <li><strong>Google AdMob</strong> للإعلانات: قد تستخدم معرفات إعلانية وتتبعًا محدودًا وفق إعداداتك. لمزيد من المعلومات راجع سياسة Google الإعلانية.</li>
-        <li><strong>Firebase Analytics/Crashlytics</strong>: لتحليلات الاستخدام وتقارير الأعطال. قد تُجمّع معرفات الأجهزة وبيانات أحداث عامة.</li>
-        <li><strong>خرائط Google</strong> أو خدمات الموقع: عند الموافقة على إذن الموقع داخل التطبيق.</li>
-        <li><strong>مزودو الدفع (مثال: Stripe/PayPal/Paymob/HyperPay)</strong>: لمعالجة المدفوعات بشكل آمن وفق سياساتهم ومعايير الامتثال ذات الصلة.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>5) أذونات التطبيق ولماذا نطلبها</h2>
-      <p>قد يطلب التطبيق الأذونات التالية بهدف تشغيل ميزات محددة:</p>
-      <ul>
-        <li><code class="badge">CAMERA</code>: لالتقاط الصور/الفيديو داخل التطبيق.</li>
-        <li><code class="badge">READ/WRITE STORAGE</code>: لحفظ وقراءة الملفات التي تنشئها داخل التطبيق.</li>
-        <li><code class="badge">LOCATION (Approx./Precise)</code>: لتقديم ميزات قائمة على الموقع.</li>
-        <li><code class="badge">NOTIFICATIONS</code>: لإرسال إشعارات مهمة تتعلق باستخدامك.</li>
-        <li><code class="badge">CONTACTS</code>: إن كانت هناك ميزة تتطلب اختيار جهات اتصال.</li>
-      </ul>
-      <p class="note">احذف أي إذن غير مستخدم فعلًا في تطبيقك.</p>
-    </section>
-
-    <section>
-      <h2>6) الاحتفاظ بالبيانات</h2>
-      <p>نحتفظ بالبيانات فقط للمدة اللازمة لتحقيق الأغراض المذكورة أعلاه، أو حسب ما يقتضيه القانون. عند عدم الحاجة، سنعمل على حذفها أو إخفاء هويتها بشكل آمن.</p>
-    </section>
-
-    <section>
-      <h2>7) الأمان</h2>
-      <p>نستخدم تدابير تنظيمية وتقنية مناسبة للمساعدة في حماية بياناتك. ومع ذلك، لا يمكن ضمان أمان تام على الإنترنت. سنبلغك بأي خرق ذي صلة وفق القوانين المطبقة.</p>
-    </section>
-
-    <section>
-      <h2>8) حقوقك</h2>
-      <ul>
-        <li>الوصول إلى بياناتك وتحديثها أو تصحيحها.</li>
-        <li>طلب حذف بياناتك حيثما كان ذلك ممكنًا.</li>
-        <li>الاعتراض على معالجة معينة أو طلب تقييدها وفق القوانين السارية.</li>
-      </ul>
-      <p>لممارسة أي من هذه الحقوق، تواصل معنا عبر البريد: <a href="mailto:zi.mabedk@gmail.com">zi.mabedk@gmail.com</a>.</p>
-    </section>
-
-    <section>
-      <h2>9) خصوصية الأطفال</h2>
-      <p>لا يوجه التطبيق خدماته إلى الأطفال دون سن <strong>18</strong>. إن كنت تعتقد أن طفلاً قد زودنا ببيانات شخصية دون موافقة مناسبة، يرجى التواصل معنا لنتخذ الإجراءات اللازمة.</p>
-    </section>
-
-    <section>
-      <h2>10) النقل الدولي للبيانات</h2>
-      <p>قد تُعالَج بياناتك على خوادم تقع خارج بلدك. نحرص على وجود ضمانات مناسبة لحماية بياناتك وفقًا للمتطلبات القانونية.</p>
-    </section>
-
-    <section>
-      <h2>11) التغييرات على هذه السياسة</h2>
-      <p>قد نقوم بتحديث هذه السياسة من وقت لآخر. سيتم نشر أي تحديث مع تاريخ السريان في هذه الصفحة. استمرارك في استخدام التطبيق بعد التحديث يُعد موافقة على النسخة المحدّثة.</p>
-    </section>
-
-    <section>
-      <h2>12) كيف تتواصل معنا</h2>
-      <p>إذا كانت لديك أسئلة حول هذه السياسة أو حول معالجة بياناتك، راسلنا على: <a href="mailto:zi.mabedk@gmail.com">zi.mabedk@gmail.com</a>.</p>
-      <p>العنوان البريدي (اختياري): 1234567890</p>
-      <p>لطلب حذف بياناتك، يمكنك إرسال رسالة بعنوان "طلب حذف البيانات" إلى بريدنا.</p>
-    </section>
-
-    <section>
-      <h2>مساعدة في نموذج "أمان البيانات" في Google Play</h2>
-      <p class="note">تذكير: عند تعبئة نموذج أمان البيانات في Play Console، تأكد من مطابقة اختيارك لأنواع البيانات والأغراض مع ما ورد في هذه السياسة والأذونات التي يستخدمها التطبيق فعليًا.</p>
-    </section>
-
-    <!-- (اختياري) موجز إنجليزي قصير للنشر الدولي -->
-    <!--
-    <section>
-      <h2>Privacy Policy (Summary in English)</h2>
-      <p>ZI-MABEDK respects your privacy. We collect and use data only to operate and improve the app, and we do not sell personal data. For inquiries or data deletion requests, contact: {{CONTACT_EMAIL}}. Effective: {{EFFECTIVE_DATE}}.</p>
-    </section>
-    -->
-
-    <footer>
-      &copy; <span id="year"></span> ZI-MABEDK — سياسة الخصوصية لتطبيق ZI-MABEDK
-    </footer>
+  <div class="header">
+    <div class="back-button">&#8592;</div>
+    <div class="header-title">سياسة الخصوصية</div>
   </div>
+
+  <div class="section">
+    <div class="title">سياسة الخصوصية</div>
+    <div class="last-updated">آخر تحديث: 11/08/2025</div>
+
+    <div class="introduction">
+      نحن نلتزم بحماية خصوصيتك. تشرح هذه السياسة كيفية جمع واستخدام وحماية معلوماتك الشخصية عند استخدام تطبيقنا.
+    </div>
+
+    <div>
+      <div class="section-title">1. المعلومات التي نجمعها</div>
+      <div class="policy-text">نحن نجمع المعلومات التالية:</div>
+      <div class="bullet-point">• معلومات الحساب: الاسم، البريد الإلكتروني، رقم الهاتف</div>
+      <div class="bullet-point">• معلومات الطلب: عناوين الشحن، تفاصيل الدفع</div>
+      <div class="bullet-point">• معلومات الاستخدام: سجل التصفح، التفضيلات</div>
+    </div>
+
+    <div>
+      <div class="section-title">2. كيفية استخدام المعلومات</div>
+      <div class="policy-text">نستخدم معلوماتك للأغراض التالية:</div>
+      <div class="bullet-point">• معالجة الطلبات وتقديم الخدمات</div>
+      <div class="bullet-point">• التواصل معك بخصوص طلباتك</div>
+      <div class="bullet-point">• تحسين تجربة المستخدم</div>
+      <div class="bullet-point">• إرسال عروض ترويجية (بموافقتك)</div>
+    </div>
+
+    <div>
+      <div class="section-title">3. مشاركة المعلومات</div>
+      <div class="policy-text">
+        لا نبيع أو نؤجر أو نشارك معلوماتك الشخصية مع أطراف ثالثة إلا في الحالات التالية:
+      </div>
+      <div class="bullet-point">• مع مزودي الخدمات الموثوقين (الشحن، الدفع)</div>
+      <div class="bullet-point">• عند طلب القانون أو السلطات المختصة</div>
+      <div class="bullet-point">• لحماية حقوقنا وممتلكاتنا</div>
+    </div>
+
+    <div>
+      <div class="section-title">4. حماية المعلومات</div>
+      <div class="policy-text">نحن نستخدم تقنيات تشفير متقدمة لحماية معلوماتك:</div>
+      <div class="bullet-point">• تشفير SSL/TLS لجميع المعاملات</div>
+      <div class="bullet-point">• خوادم آمنة محمية</div>
+      <div class="bullet-point">• مراقبة مستمرة للأمان</div>
+    </div>
+
+    <div>
+      <div class="section-title">5. ملفات تعريف الارتباط</div>
+      <div class="policy-text">
+        نستخدم ملفات تعريف الارتباط لتحسين تجربتك. يمكنك التحكم في إعدادات ملفات تعريف الارتباط من خلال إعدادات المتصفح.
+      </div>
+    </div>
+
+    <div>
+      <div class="section-title">6. حقوقك</div>
+      <div class="policy-text">لديك الحق في:</div>
+      <div class="bullet-point">• الوصول إلى معلوماتك الشخصية</div>
+      <div class="bullet-point">• تصحيح المعلومات غير الدقيقة</div>
+      <div class="bullet-point">• حذف معلوماتك الشخصية</div>
+      <div class="bullet-point">• الاعتراض على معالجة معلوماتك</div>
+    </div>
+
+    <div>
+      <div class="section-title">7. الاحتفاظ بالمعلومات</div>
+      <div class="policy-text">
+        نحتفظ بمعلوماتك طالما كان حسابك نشطاً أو حسب المتطلبات القانونية. يمكنك طلب حذف معلوماتك في أي وقت.
+      </div>
+    </div>
+
+    <div>
+      <div class="section-title">8. التغييرات على السياسة</div>
+      <div class="policy-text">
+        قد نقوم بتحديث هذه السياسة من وقت لآخر. سنقوم بإشعارك بأي تغييرات جوهرية عبر البريد الإلكتروني أو داخل التطبيق.
+      </div>
+    </div>
+
+    <div class="contact-section">
+      <div class="contact-title">للاستفسارات</div>
+      <div class="contact-text">
+        إذا كان لديك أي أسئلة حول سياسة الخصوصية، يرجى التواصل معنا:
+      </div>
+      <div class="contact-email">Zimabedakcompany@gmail.com</div>
+    </div>
+  </div>
+
 </body>
 </html>
-
-
